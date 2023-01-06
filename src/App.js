@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import AboutMe from "./features/aboutme/AboutMe";
+import Contact from "./features/contact/Contact";
+import Footer from "./features/footer/Footer";
+import Introduction from "./features/introduction/Introduction";
+import Navbar from "./features/navbar/Navbar";
+import Projects from "./features/projects/Projects";
 
-function App() {
+const App = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex bg-black font-serif flex-col scroll-pt-14">
+      <Navbar toggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
+      <main className="p-4">
+        <Introduction />
+        <AboutMe />
+        <Projects />
+        <Contact />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
