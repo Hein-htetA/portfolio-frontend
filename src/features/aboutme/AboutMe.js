@@ -8,9 +8,15 @@ const AboutMe = () => {
   return (
     <section id="about" className="scroll-mt-20 mb-40">
       <AboutMeTitle />
-      <AboutMeTextbox />
-      <Technologies />
-      <ProfileImage />
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-x-5">
+        <div>
+          <AboutMeTextbox />
+          <Technologies />
+        </div>
+        <div>
+          <ProfileImage />
+        </div>
+      </div>
     </section>
   );
 };

@@ -1,0 +1,29 @@
+.email-container {
+  display: none;
+  position: fixed;
+  right: 1.75rem;
+  bottom: 0;
+}
+
+.email-container::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 7rem;
+  background-color: #808080
+}
+
+.email-link {
+  letter-spacing: 1px; 
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+@media only screen and (min-width: 768px) {
+  .email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem
+  }
+}

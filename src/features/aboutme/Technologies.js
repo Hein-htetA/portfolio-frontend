@@ -26,7 +26,7 @@ const Technologies = () => {
           PostgreSQL
         </li>
         <li className="relative mb-2 pl-4 before:content-['∽'] before:absolute before:left-0">
-          Tailwind( favourite )
+          Tailwind <span className="text-sm">(favourite)</span>
         </li>
         <li className="relative mb-2 pl-4 before:content-['∽'] before:absolute before:left-0">
           MaterialUI

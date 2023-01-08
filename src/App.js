@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="flex bg-black font-serif flex-col scroll-pt-14">
       <Navbar toggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
-      <main className="p-4">
+      <main className="p-6 py-2 md:px-24">
         <Introduction />
         <AboutMe />
         <Projects />
