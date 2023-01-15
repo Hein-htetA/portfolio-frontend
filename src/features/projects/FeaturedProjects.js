@@ -79,6 +79,15 @@ const FeaturedProjects = () => {
             </li>
             <li>
               <a
+                href="https://redux-toolkit.js.org/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Redux-ToolKit
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://www.w3.org/Style/CSS/Overview.en.html"
                 target={"_blank"}
                 rel="noreferrer"
