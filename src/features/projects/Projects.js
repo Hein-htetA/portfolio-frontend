@@ -8,7 +8,6 @@ const Projects = () => {
     <section id="projects" className="scroll-mt-20 mb-40">
       <ProjectsTitle />
       <FeaturedProjects />
-      <NoteworthyProjects />
     </section>
   );
 };

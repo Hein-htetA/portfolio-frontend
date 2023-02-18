@@ -11,6 +11,9 @@ const Technologies = () => {
           JavaScript (ES6+)
         </li>
         <li className="relative mb-2 pl-4 before:content-['-'] before:absolute before:left-0">
+          TypeScript
+        </li>
+        <li className="relative mb-2 pl-4 before:content-['-'] before:absolute before:left-0">
           React
         </li>
         <li className="relative mb-2 pl-4 before:content-['-'] before:absolute before:left-0">
