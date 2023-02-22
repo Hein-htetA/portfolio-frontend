@@ -1,5 +1,5 @@
 import React from "react";
-import cv from "../../assets/Certificates.pdf";
+import cv from "../../assets/HeinHACV.pdf";
 import certificate from "../../assets/Certificates.pdf";
 
 const DownloadCV = () => {
